@@ -1,0 +1,132 @@
+/* variables */
+:root {
+    --Dark_Grayish_Magenta: hsl(303, 10%, 53%);
+    --Light_Grayish_Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+
+    --Very_Dark_Magenta: hsl(300, 43%, 22%);
+    --Soft_Pink: hsl(333, 80%, 67%);
+}
+/* variables */
+/* global rules */
+* {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-family: 'Spartan', sans-serif;
+    height: 97vh;
+}
+body svg {
+    z-index: -1;
+}
+/* global rules */
+/* start main */
+main {
+    width: 1110px;
+    display: grid;
+    grid-template-rows: repeat(2, 50%);
+    grid-template-columns: 1fr;
+    z-index: 999;
+}
+main .container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+/* end main */
+/* start st */
+.st p {
+    width: 450px;
+    line-height: 1.75;
+    color: var(--Dark_Grayish_Magenta);
+}
+.st h1 {
+    font-size: 35px;
+    width: 390px;
+    color: var(--Very_Dark_Magenta);
+}
+/* end st */
+/* start nd */
+.nd svg,.nd p{
+    display: inline-block;
+}
+.nd p {
+    margin-left: 30px;
+    color: var(--Very_Dark_Magenta);
+    font-weight: 700;
+}
+.nd div {
+    padding: 10px 20px;
+    background-color: var(--Light_Grayish_Magenta);
+    margin-bottom: 15px;
+    width: 445px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.nd .part1 {
+    margin-left: -100px;
+}
+.nd .part2 {
+    margin-left: -50px;
+}
+/* end nd */
+/* start rd */
+.rd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rd div {
+    width: 350px;
+    height: 235px;
+    background-color: var(--Very_Dark_Magenta);
+    color: white;
+    padding: 40px 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.rd .part2 {
+    margin-top: 15px;
+}
+.rd .part3 {
+    margin-top: 30px;
+}
+.rd h4 {
+    display: inline-block;
+    position: relative;
+    top: -25px;
+}
+.rd h4 + p {
+    position: relative;
+    top: -40px;
+    left: 45px;
+    margin: 0;
+    color: var(--Dark_Grayish_Magenta);
+}
+.rd h4 + p + p {
+    margin: 0;
+    position: relative;
+    top: -25px;
+    line-height: 1.6;
+}
+.rd img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+/* end rd */
